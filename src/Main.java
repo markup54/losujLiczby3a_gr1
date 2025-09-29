@@ -7,11 +7,17 @@ public class Main {
         int[] tablicaWylosowanychLiczb = losujLiczbyDoTablicy(5);
 
         //wypisz elementy tablicy
-        System.out.println("Wylosowana tablica:");
-        for (int i = 0; i < tablicaWylosowanychLiczb.length; i++) {
-            System.out.print(tablicaWylosowanychLiczb[i]+", ");
-        }
+        wypisz(tablicaWylosowanychLiczb);
+        System.out.println();
 
+        //losuj 30 liczb z zakresu 1,40 bez powtorzen
+
+    }
+    private static void wypisz(int[] tablica){
+        System.out.println("Wylosowana tablica:");
+        for (int i = 0; i < tablica.length; i++) {
+            System.out.print(tablica[i]+", ");
+        }
     }
 
     private static int[] losujLiczbyDoTablicy(int ileLiczb){
